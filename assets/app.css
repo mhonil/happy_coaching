@@ -1,0 +1,34 @@
+.carousel {
+    display: block;
+    position: relative;
+    -webkit-transform: translateZ(0);
+    margin: 50px auto;
+    height: 500px;
+    -webkit-overflow-scrolling: touch;
+  }
+  .touch .carousel {
+    overflow: auto;
+  }
+  .carousel > .wrap {
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  .carousel,.wrap ul {
+    list-style: none;
+    white-space: nowrap;
+    height: 500px;
+    cursor: pointer;
+  }
+  .carousel > .wrap > ul > li {
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    margin: 0 0 0 50px;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: 0.25s ease-out;
+    transition: 0.25s ease-out;
+  }
+  .carousel > .wrap > ul > li:first-child {
+    margin: 0 0 0 50px;
+  }
